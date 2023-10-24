@@ -14,12 +14,12 @@
             <img src="logo.jpg" alt="Logo">
         </div>
         <nav>
-            <ul>
-                <li><a href="about.html">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <ul>
+            <li><a href="about.html" onclick="loadPage('about.html');">Home</a></li>
+            <li><a href="index.html" onclick="loadPage('index.html.html');">Shop</a></li>
+            <li><a href="contact.html" onclick="loadPage('contact.html');">Contact</a></li>
+        </ul>
+    </nav>
     </header>
     <main> <br>
 <h1> VEEM CLOSET</h1>            <div class="product">
@@ -127,6 +127,15 @@
     <br>
         <br>
     <br>
+    <script>
+    function loadPage(pageUrl) {
+        fetch(pageUrl)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content-container').innerHTML = data;
+            });
+    }
+    </script>
     <footer>
         &copy; 2023 VEEM CLOSET. All rights reserved.
 <div class="contact-info"></div>
