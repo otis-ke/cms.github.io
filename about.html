@@ -39,6 +39,15 @@
         
 
     </main>
+    <script>
+    function loadPage(pageUrl) {
+        fetch(pageUrl)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('content-container').innerHTML = data;
+            });
+    }
+    </script>
     <footer>
         &copy; 2023 VEEM CLOSET. All rights reserved.
             <div class="contact-info"></div>
