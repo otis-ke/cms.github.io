@@ -168,15 +168,6 @@ footer {
 
 
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
 
 .contact-form {
     background-color: #fff;
